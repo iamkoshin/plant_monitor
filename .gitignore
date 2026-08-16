@@ -1,0 +1,16 @@
+# ── Firmware build artifacts ───────────────────────────
+# PlatformIO creates these the first time you build.
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# ── Windows junk ───────────────────────────────────────
+# Explorer drops these into folders it has previewed,
+# such as dist/assets/images/.
+Thumbs.db
+Desktop.ini
+
+# ── Note ───────────────────────────────────────────────
+# conn.php is intentionally NOT ignored. It holds the stock
+# XAMPP defaults (root / no password / localhost), and the
+# same values are hardcoded in three API files anyway.
