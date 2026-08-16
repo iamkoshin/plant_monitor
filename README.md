@@ -163,11 +163,6 @@ The imported SQL dump ships with demo accounts. Sign in as:
 
 **Change these immediately** if you deploy anywhere beyond your local machine.
 
-> Note: `koshin` exists in both the `admin` and `user` tables with different passwords.
-> Because [login.php](dist/application/api/login.php) checks `admin` before `user`,
-> `koshin` / `admin123` signs in as an administrator while `koshin` / `123` signs in as
-> a normal user. Renaming one of the two accounts would avoid the ambiguity.
-
 ---
 
 ## Security Notes

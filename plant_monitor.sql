@@ -40,7 +40,6 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `username`, `password`, `email`, `created_at`) VALUES
-(5, 'koshin', '0192023a7bbd73250516f069df18b500', 'koshin@example.com', '2026-06-23 14:09:59'),
 (6, 'admin', '202cb962ac59075b964b07152d234b70', 'admin@example.com', '2026-06-25 18:15:01');
 
 -- --------------------------------------------------------
