@@ -165,18 +165,6 @@ The imported SQL dump ships with demo accounts. Sign in as:
 
 ---
 
-## Security Notes
-
-This is an academic prototype running on a trusted local network, and a few things would need hardening before any real deployment:
-
-- Passwords are hashed with **MD5**, which is not secure — replace with `password_hash()` / `password_verify()`.
-- Several queries interpolate input directly into SQL instead of using prepared statements.
-- The ESP32 endpoints (`receive_data.php`, `get_pump_command.php`) are unauthenticated — anyone on the network can post readings or read the pump command.
-- Sensor data is shared across all users rather than scoped per account.
-- Database credentials are committed in `conn.php`. That is deliberate here — they are the stock XAMPP defaults (`root`, no password, `localhost`) and the same values are hardcoded in three API files anyway. If this is ever deployed to a real host, move them to a git-ignored config first.
-
----
-
 ## Author
 
 **Koshin** — University of Somalia (UNISO), Final Year Project.
